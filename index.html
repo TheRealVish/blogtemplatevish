@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+
+        <article>
+            <h2>&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing eli - BIO</h2>
+
+            <p>&nbsp;sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <blockquote>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate<br><small>Stephen Hawking</small></blockquote>
+            <p>
+                similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+                placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque
+                earum rerum hic tenetur a sapiente delectus</p>
+            <p class="post-end clearfix"><span>Author</span></p>
+
+        </article>
+
+        <article>
+            <h2 class="collapsible">&nbsp;Scelerisque eleifend donec pretium vulputate sapien</h2>
+            <div class="content">
+                <p>&nbsp;Cum sociis natoque penatibus et magnis dis parturient montes. Aliquet enim tortor at auctor urna. Egestas pretium aenean.</p>
+                <p>
+                    Duis convallis convallis tellus id. Elit pellentesque habitant morbi tristique senectus et netus et. Elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere. Neque aliquam vestibulum morbi blandit cursus risus at ultrices. Nunc faucibus
+                    a pellentesque sit amet porttitor eget dolor morbi. Ultrices in iaculis nunc sed augue lacus viverra vitae. Massa sapien faucibus et molestie ac feugiat sed lectus vestibulum. Pharetra magna ac placerat vestibulum lectus mauris ultrices
+                    eros in. Morbi enim nunc faucibus a pellentesque sit amet porttitor eget.
+                </p>
+
+            </div>
+            <p class="post-end clearfix"><span>Non blandit massa enim nec dui&nbsp;&nbsp;<span> 01 Jan 2022</span> </span>
+            </p>
+        </article>
+        <article>
+            <h2 class="collapsible">&nbsp;Eget lorem dolor sed viverra ipsum.</h2>
+            <div class="content">
+                <p>&nbsp;Aliquet nibh praesent tristique magna sit amet purus. At elementum eu facilisis sed odio. Velit sed ullamcorper morbi tincidunt ornare. Pellentesque diam volutpat commodo sed egestas egestas. Tortor dignissim convallis aenean et
+                    tortor at risus viverra. </p>
+                <p>Alpha particles gained prominence during the early days of particle physics when scientists used them as projectiles to bombard certain targets. One of the most widely celebrated experiments that made use of alpha particles was that of
+                    Ernest Rutherford’s that led to the discovery of the atom’s structure.</p>
+                <p>Vel facilisis volutpat est velit egestas dui. Morbi enim nunc faucibus a pellentesque sit. At consectetur lorem donec massa. Malesuada proin libero nunc consequat interdum varius. Fermentum et sollicitudin ac orci phasellus egestas tellus
+                    rutrum. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Ac odio tempor orci dapibus ultrices in. Donec massa sapien faucibus et molestie ac feugiat sed. Massa enim nec dui nunc mattis. Elit at imperdiet dui accumsan
+                    sit amet nulla facilisi morbi. Dictumst quisque sagittis purus sit. </p>
+            </div>
+            <p class="post-end clearfix"><span> nisi scelerisque eu ultrices vitae auctor eu augue.<span>02 Jan 2022</span></span>
+            </p>
+        </article>
+        <article>
+            <h2 class="collapsible">&nbsp;Accumsan in nisl nisi scelerisque eu ultrices.</h2>
+            <div class="content">
+                <p>&nbsp;Feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Etiam non quam lacus suspendisse faucibus interdum posuere lorem. Cursus metus aliquam eleifend mi in. In aliquam sem fringilla ut morbi tincidunt.
+                </p>
+                <p>Ac ut consequat semper viverra nam libero. Vel pharetra vel turpis nunc eget lorem dolor sed viverra. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Adipiscing bibendum est ultricies integer quis auctor elit.
+                    Nulla malesuada pellentesque elit eget gravida. </p>
+                <p><img src="https://ipiccy.com/res/LP/data/images/free-online-photoshop-b0i.jpg"></p>
+                <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu ultrices vitae auctor eu augue ut. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan. Ut enim blandit volutpat maecenas
+                    volutpat blandit aliquam etiam. Pellentesque id nibh tortor id aliquet lectus proin nibh. Mauris rhoncus aenean vel elit. </p>
+                <p>Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Facilisis leo vel fringilla est ullamcorper. Urna nunc id cursus metus aliquam. Faucibus a pellentesque sit amet. Mattis enim ut tellus elementum sagittis vitae.
+                    Fermentum leo vel orci porta non pulvinar neque laoreet suspendisse.</p>
+            </div>
+            <p class="post-end clearfix"><span> nec feugiat in fermentum. <span>03 Jan 2022</span></span>
+            </p>
+        </article>
+    </main>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+    <footer>
+        <p>Author: Vish&nbsp;&nbsp;&nbsp;Github: https://github.com/TheRealVish</p>
+    </footer>
+
+</body>
+
+</html>
